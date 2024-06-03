@@ -18,7 +18,7 @@
   </head>
   <body class="page">
     <header class="header width-content">
-      <a class="header__title" href="#"> &lt;/HTML&gt; </a>
+      <a class="header__title"> &lt;/HTML&gt; </a>
       <h1 class="header__sub-title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -79,7 +79,7 @@
                   0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-sparks)"/>
               </svg>
             </button>
-            <button class="card__like-button" type="button"><span class="button__text">Like</span></button>
+            <button class="card__like-button button_animation" type="button"><span class="button__text">Like</span></button>
         </div>
         </li>
         <li class="card-item">
@@ -115,7 +115,7 @@
                   0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-sparks)"/>
               </svg>
             </button>
-            <button class="card__like-button" type="button"><span class="button__text">Like</span></button>
+            <button class="card__like-button button_animation" type="button"><span class="button__text">Like</span></button>
         </div>
         </li>
         <li class="card-item">
@@ -150,7 +150,7 @@
                   0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-sparks)"/>
               </svg>
             </button>
-            <button class="card__like-button" type="button"><span class="button__text">Like</span></button>
+            <button class="card__like-button button_animation" type="button"><span class="button__text">Like</span></button>
         </div>
         </li>
         <li class="card-item">
@@ -186,7 +186,7 @@
                   0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-sparks)"/>
               </svg>
             </button>
-            <button class="card__like-button" type="button"><span class="button__text">Like</span></button>
+            <button class="card__like-button button_animation" type="button"><span class="button__text">Like</span></button>
         </div>
         </li>
         <li class="card-item">
@@ -222,7 +222,7 @@
                   0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-sparks)"/>
               </svg>
             </button>
-            <button class="card__like-button" type="button"><span class="button__text">Like</span></button>
+            <button class="card__like-button button_animation" type="button"><span class="button__text">Like</span></button>
         </div>
         </li>
         <li class="card-item">
@@ -257,7 +257,7 @@
                   0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-sparks)"/>
               </svg>
             </button>
-            <button class="card__like-button" type="button"><span class="button__text">Like</span></button>
+            <button class="card__like-button button_animation" type="button"><span class="button__text">Like</span></button>
         </div>
         </li>
         <li class="card-item">
@@ -293,7 +293,7 @@
                   0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-sparks)"/>
               </svg>
             </button>
-            <button class="card__like-button" type="button"><span class="button__text">Like</span></button>
+            <button class="card__like-button button_animation" type="button"><span class="button__text">Like</span></button>
         </div>
         </li>
         <li class="card-item">
@@ -329,31 +329,29 @@
                   0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-sparks)"/>
               </svg>
             </button>
-            <button class="card__like-button" type="button"><span class="button__text">Like</span></button>
+            <button class="card__like-button button_animation" type="button"><span class="button__text">Like</span></button>
         </div>
         </li>
       </ul>
-    </main>
-    <footer class="footer">
-      <button class="card__like-button" id="show-dialog-btn" type="button">
+      <button class="button__save button_animation" id="show-dialog-btn" type="button">
         <svg xmlns="http://www.w3.org/2000/svg"  class="icon-m" width="21" height="21" viewBox="0 0 21 21" fill="none">
-          <use href="./svg/floppy.svg#floppy-disk"></use>
+          <use href="./svg/floppy.svg"></use>
           </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
-    </footer>
+  </main>
 
-    <dialog id="my-dialog" class="dialog">
-      <div class="dialog-conteoner">
-      <svg xmlns="http://www.w3.org/2000/svg"  class="icon-m" width="21" height="21" viewBox="0 0 21 21" fill="none">
-        <use href="./svg/floppy.svg#floppy-disk"></use>
-        </svg>
-        <P class="text-dialog">Вставьте <br> дискету, чтобы <br> продолжить</P>
-      </div>  
-      <form class="form-dialog" method="dialog">
-        <button class="card__like-button" id="close-dialog-btn" type="submit"><span class="button__text">ок</span></button> 
-      </form>   
-    </dialog>
-    <script src="./scripts/like.js"></script>
-  </body>
+  <dialog id="my-dialog" class="dialog">
+    <div class="dialog-conteoner">
+    <svg xmlns="http://www.w3.org/2000/svg"  class="icon-m" width="21" height="21" viewBox="0 0 21 21" fill="none">
+      <use href="./svg/floppy.svg"></use>
+      </svg>
+      <P class="text-dialog">Вставьте <br> дискету, чтобы <br> продолжить</P>
+    </div>  
+    <form class="form-dialog" method="dialog">
+      <button class="button_ok button_animation" id="close-dialog-btn" type="submit"><span class="button__text">ок</span></button> 
+    </form>   
+  </dialog>
+  <script src="./scripts/like.js"></script>
+</body>
 </html>

@@ -210,7 +210,7 @@
   position: relative;
 }
 
-.card__like-button::before {
+.button_animation::before {
   position: absolute;
   content: '';
   width: 100%;
@@ -225,11 +225,11 @@
 
 /*Состояние кнопки  Like*/
 
-.card__like-button:hover {
+.button_animation:hover {
   cursor: pointer;
 }
 
-.card__like-button:hover::before {
+.button_animation:hover::before {
   transform: scaleX(1);
 }  
 
@@ -239,12 +239,12 @@
   color: var(--color-button-text);
 }
 
-.card__like-button:focus {
+.button_animation:focus {
   outline: none;
   transition: 0.3s;
 }
 
-.card__like-button:focus-visible {
+.button_animation:focus-visible {
   border: 2px solid var(--accent-color);
   box-shadow: 2px 2px 0px 0px var(--accent-color);
 }
@@ -371,15 +371,14 @@
 
 /*Подвал*/
 
-.footer .card__like-button {
-  width: 335px;
-  height: 51px;
-  padding: 15px 0 15px 0;
+.button__save {
+  width: 339px;
+  height: 54px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  margin-bottom: 105px;
+  margin: 0px auto;
   border: 2px solid var(--accent-color);
   font-family: var(--accent-font), fantasy;
   font-size: 14px;
@@ -408,7 +407,7 @@
   height: 40px;
 }
 
-.dialog .card__like-button {
+.dialog .button_ok {
   width: 293px;
   height: 38px;
   text-transform: uppercase;
