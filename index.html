@@ -333,25 +333,24 @@
         </div>
         </li>
       </ul>
-      <button class="button__save button_animation" id="show-dialog-btn" type="button">
+      <button class="button_animation button__save" id="show-dialog-btn" type="button">
         <svg xmlns="http://www.w3.org/2000/svg"  class="icon-m" width="21" height="21" viewBox="0 0 21 21" fill="none">
           <use href="./svg/floppy.svg"></use>
           </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
+      <dialog id="my-dialog" class="dialog">
+        <div class="dialog-conteoner">
+        <svg xmlns="http://www.w3.org/2000/svg"  class="icon-m" width="21" height="21" viewBox="0 0 21 21" fill="none">
+          <use href="./svg/floppy.svg"></use>
+          </svg>
+          <P class="dialog_text">Вставьте дискету, чтобы продолжить</P>
+        </div>  
+        <form class="form-dialog">
+          <button class="button_ok button_animation" id="close-dialog-btn" type="submit"><span class="button__text">ок</span></button> 
+        </form>   
+      </dialog>
   </main>
-
-  <dialog id="my-dialog" class="dialog">
-    <div class="dialog-conteoner">
-    <svg xmlns="http://www.w3.org/2000/svg"  class="icon-m" width="21" height="21" viewBox="0 0 21 21" fill="none">
-      <use href="./svg/floppy.svg"></use>
-      </svg>
-      <P class="text-dialog">Вставьте <br> дискету, чтобы <br> продолжить</P>
-    </div>  
-    <form class="form-dialog" method="dialog">
-      <button class="button_ok button_animation" id="close-dialog-btn" type="submit"><span class="button__text">ок</span></button> 
-    </form>   
-  </dialog>
   <script src="./scripts/like.js"></script>
 </body>
 </html>
