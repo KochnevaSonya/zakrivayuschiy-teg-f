@@ -432,58 +432,37 @@
 /*Мобильная верстка*/
 @media (width <= 376px) {
 
-  .width-content {
-    inline-size: 100%;
-  }  
-
-  .header {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding: 120px 14px 25px 14px;
-  }
-
-  .theme-menu__item {
-    padding-left: 19px;
-  }
-
-  .card-items {
-    display: flex;
-    flex-direction: column;
-    gap: 52px;
-  }
-
-  .card-item {
-  margin: 0;
-  }
-
-  .card-item__label {
-    padding: 23px 11px 0 0;
+  .header{
+    padding: 120px 0 25px 0;
   }
 
   .card-itrm__title {
-    height: 100%;
-    padding: 4px 10px 6px 10px;
+    padding: 5px 10px;
   }
 
-  .card-item__text {
-    padding: 22px 25px 27px 25px;
+  .card-item__label {
+    padding: 20px 10px;
   }
 
-  .card-buttons {
-    padding: 30px 25px 23px 0;
+  .card-item__img {
+    padding: 0px 0px 0px 3px;
   }
 
+  .button__save {
+    width: 310px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
 
-.icon-m {
-  width: 28px;
-  height: 28px;
-}
+  .floppy-svg {
+    width: 28px;
+    height: 28px;
+    margin-right: 0;
+  }
 
-.button__save {
-  width: 308px;
-  height: 82px;
-  display: flex;
-  flex-direction: column;
-  margin: 37px auto 100px;
+  .my-dialog{
+    padding: 30px 40px;
   }
 }
