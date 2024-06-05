@@ -6,12 +6,19 @@
   flex-direction: column;
   align-items: center;
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: 'wght' var(--weight-main-text);
+  font-variation-settings: 'wght' var(--thickness-title-card);
+  font-variation-settings: 'wght' var(--thickness-text-card);
   background-color: var(--background-color);
   color: var(--accent-color);
   background-image: var(--background-image);
   background-size: cover;
   background-attachment: fixed;
+}
+
+.block {
+  margin-inline: auto;
+  background-color: var(--bg-color);
+  inline-size: clamp(23.1875rem, 15.9472rem + 30.892vi, 43.75rem);
 }
 
 /*Шапка*/
@@ -157,13 +164,13 @@
 }
 
 @supports (
-  (text-rendering: 1px var(--background-color))
+  (-webkit-text-stroke: 1px var(--background-color))
   or
     (-webkit-text-stroke: 1px var(--background-color))
 ) {
   .card-item__label {
     -webkit-text-stroke: 1px var( --background-color);
-    text-rendering: 1px var( --background-color);
+    -webkit-text-stroke: 1px var( --background-color);
     text-shadow: none;
   }
 }
@@ -273,10 +280,6 @@
 .core {
   fill: transparent;
   transition: 0.3s;
-}
-
-.width-content{
-  width: var(--size-content)
 }
 
 .main-body {
@@ -432,20 +435,12 @@
 /*Мобильная верстка*/
 @media (width <= 376px) {
 
+  .block {
+    inline-size: 100%;
+  }
+
   .header{
     padding: 120px 0 25px 0;
-  }
-
-  .card-itrm__title {
-    padding: 5px 10px;
-  }
-
-  .card-item__label {
-    padding: 20px 10px;
-  }
-
-  .card-item__img {
-    padding: 0px 0px 0px 3px;
   }
 
   .button__save {
@@ -456,13 +451,21 @@
     gap: 8px;
   }
 
-  .floppy-svg {
-    width: 28px;
-    height: 28px;
-    margin-right: 0;
+  .dialog .button_ok{
+    width: 257px;
+    height: 38px;
+  }
+
+  .card-itrm__title {
+    padding: 5px 10px;
+  }
+
+  .card-item__label {
+    padding: 20px 10px;
   }
 
   .my-dialog{
     padding: 30px 40px;
   }
+
 }
