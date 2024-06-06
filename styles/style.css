@@ -384,6 +384,7 @@
 .button__save {
   width: 339px;
   height: 54px;
+  gap: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
