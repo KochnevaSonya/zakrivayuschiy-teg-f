@@ -171,7 +171,7 @@
 ) {
   .card-item__label {
     -webkit-text-stroke: 1px var( --background-color);
-    -webkit-text-stroke: 1px var( --background-color); /*не позволяет использовать без префикса*/
+    texr-stroke: 1px var(--background-color); /*не позволяет использовать без префикса*/
     text-shadow: none;
   }
 }
