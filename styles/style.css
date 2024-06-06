@@ -475,4 +475,9 @@
   .card__text-wrapper{
     margin-block-end: 24px;
   }
+
+  .icon-m{
+    width: 28px;
+    height: 28px;
+  }
 }
